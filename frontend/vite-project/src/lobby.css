@@ -1,0 +1,8 @@
+.nickname{
+    padding: 2em;
+}
+
+.roombutton{
+    display: flex;
+    justify-content: center;
+}
