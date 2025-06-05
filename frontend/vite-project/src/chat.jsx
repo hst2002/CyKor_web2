@@ -13,7 +13,7 @@ function Chat(){
     const [inputvalue, setInputvalue] = useState("");
 
     const sendMessage = (message) => {
-        socket.emit("send_message", message);
+        socket.emit("send_message", {message: message, nickname: nickname, room_num: num});
         setInputvalue("");
     };
 
